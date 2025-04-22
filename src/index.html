@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Logic-Based Air Conditioning Controller</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Fuzzy Logic-Based Air Conditioning Controller</h1>
+    <div class="container">
+        <!-- Input Parameters Section -->
+        <div class="input-parameters">
+            <h2>Input Parameters</h2>
+            <div class="slider-container">
+                <label for="current-temperature">Current Temperature: <span id="current-temperature-value">15°C</span></label>
+                <input type="range" id="current-temperature" min="10" max="40" value="15">
+            </div>
+            <div class="slider-container">
+                <label for="current-humidity">Current Humidity: <span id="current-humidity-value">13%</span></label>
+                <input type="range" id="current-humidity" min="20" max="100" value="13">
+            </div>
+            <div class="slider-container">
+                <label for="room-occupancy">Room Occupancy: <span id="room-occupancy-value">11 people</span></label>
+                <input type="range" id="room-occupancy" min="0" max="50" value="11">
+            </div>
+            <div class="slider-container">
+                <label for="desired-temperature">Desired Temperature: <span id="desired-temperature-value">25°C</span></label>
+                <input type="range" id="desired-temperature" min="16" max="30" value="25">
+            </div>
+            <div class="slider-container">
+                <label for="desired-humidity">Desired Humidity: <span id="desired-humidity-value">12%</span></label>
+                <input type="range" id="desired-humidity" min="30" max="80" value="12">
+            </div>
+        </div>
+
+        <!-- Input Feature Section -->
+        <div class="input-feature">
+            <h2>Calculate Based on Input</h2>
+            <label for="input-temperature">Enter Temperature (°C):</label>
+            <input type="number" id="input-temperature" placeholder="e.g., 25">
+            <button id="calculate-btn">Calculate</button>
+            <p id="calculation-result"></p>
+        </div>
+
+        <!-- System Outputs Section -->
+        <div class="system-outputs">
+            <h2>System Outputs</h2>
+            <div class="output-item">
+                <span>Compressor</span>
+                <span id="compressor-output" class="high">High</span>
+            </div>
+            <div class="output-item">
+                <span>Fan Speed</span>
+                <span id="fan-speed-output" class="low">Low</span>
+            </div>
+            <div class="output-item">
+                <span>Expansion Valve</span>
+                <span id="expansion-valve-output" class="closed">Closed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership Functions Section -->
+    <div class="membership-functions">
+        <h2>Temperature Membership Functions</h2>
+        <div id="membership-graph"></div>
+    </div>
+
+    <!-- Additional Graphs Section -->
+    <div class="additional-graphs">
+        <h2>Additional Graphs</h2>
+        <div id="humidity-graph"></div>
+        <div id="occupancy-graph"></div>
+        <div id="desired-temp-graph"></div>
+        <div id="desired-humidity-graph"></div>
+    </div>
+
+    <!-- Dynamic Summary Graph -->
+    <div class="dynamic-summary-graph">
+        <h2>Dynamic Summary Graph</h2>
+        <div id="summary-graph"></div>
+    </div>
+
+    <!-- Logout Button -->
+    <a href="login.html" class="logout-btn">Logout</a>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/fuzzyLogic.js"></script>
+</body>
+</html>

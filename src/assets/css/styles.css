@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Dynamic Summary Graph */
+.dynamic-summary-graph {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Parameters Section */
+.input-parameters {
+    width: 45%;
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-parameters h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.slider-container {
+    margin-bottom: 15px;
+}
+
+.slider-container label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.slider-container input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Input Feature */
+.input-feature {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-feature input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-feature button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-feature button:hover {
+    background-color: #0056b3;
+}
+
+/* System Outputs Section */
+.system-outputs {
+    width: 45%;
+    background: linear-gradient(135deg, #28a745, #ffc107);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.system-outputs h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.output-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.output-item span {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.output-item .high {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.output-item .medium {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.output-item .low {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.output-item .closed {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Membership Functions Section */
+.membership-functions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.membership-functions canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Login Page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: #6f42c1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #5a379c;
+}
